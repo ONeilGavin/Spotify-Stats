@@ -1,0 +1,35 @@
+body {
+    background-color: #191919;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+.number-one img {
+    width: 40%;
+    height: 40%;
+}
+.top-ten {
+    margin-top: 2%;
+    list-style: none;
+}
+.top-ten li {
+    padding-bottom: 1%;
+}
+.top-ten img {
+    width: 30%;
+    height: 30%;
+    padding-bottom: 2%;
+}
+
+.popular h4 {
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 3%;
+}
+
+.popular img {
+    width: 25%;
+    height: 25%;
+}
+
+

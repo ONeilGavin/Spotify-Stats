@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset="utf-8" />
+    <title>Spotify Stats</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <h1>Oops, you didn't allow access to your Spotify data. <br>Click below to try again.</h1>
+        <a href="{{auth_link}}"><img src="{{ url_for('static', filename='spotifyConnect.png')}}"></a>
+    </body>
+</html>

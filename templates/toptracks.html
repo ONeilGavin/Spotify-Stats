@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset="utf-8" />
+    <title>Spotify Stats</title>
+    <link type="text/css" rel="stylesheet"href="{{ url_for('static', filename='topartists.css')}}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <h1>Your top Spotify artists of all time:</h1>
+            <div class="number-one"></div>
+                <h2>1. {{info[0]['name']}}</h2>
+                <img src={{info[0]['image']}}>
+             </div>
+
+            <!-- Start looping on second element so #1 artist can be formatted differently -->
+            <div class="top-ten">
+                {% for i in range(1, 10) %}
+                    <h3>{{i + 1}}. {{info[i]['name']}}</h3>
+                    <img src="{{info[i]['image']}}" width="300" height="300">
+                {% endfor %}
+            </div>
+
+            <div class="popular">
+                <!-- Find the most popular artist in the dict-->
+                {% for item in info %}
+                    {% if item['popularity_rank'] == "most" %}
+                        <h3>Your most popular artist: {{item['name']}}</h3>
+                        <img src="{{item['image']}}" width="300" height="300">
+                        <h4>It's okay, they're not overrated.</h4>
+                    {% endif %}
+                {% endfor %}
+
+                <!-- Find the least popular artist in the dict-->
+                {% for item in info %}
+                    {% if item['popularity_rank'] == "least" %}
+                        <h3>Your least popular artist: {{item['name']}}</h3>
+                        <img src="{{item['image']}}" width="300" height="300">
+                        <h4>Probably nobody else has ever heard of them.</h4>
+                    {% endif %}
+                {% endfor %}
+            </div>
+    </body>
+</html>
