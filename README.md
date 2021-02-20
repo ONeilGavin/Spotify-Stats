@@ -2,6 +2,7 @@
 # Spotify Stats
 
 A flask app to see your top Spotify artists of all time.
+![A screenshot of the website](screenshots/screenshot1.png)
 
 ## Requirements
 - Python 3.6+
