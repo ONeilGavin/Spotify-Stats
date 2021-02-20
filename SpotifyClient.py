@@ -1,7 +1,7 @@
 from SpotifyAPI import *
 
-client_id = 'cff101e2e4334f3ea74a73ca652a96c6'
-client_secret = '764736f71c5c49ec8009befd251e7576'
+client_id = 'YOUR CLIENT ID HERE'
+client_secret = 'YOUR CLIENT SECRET HERE'
 
 spotify = SpotifyAPI(client_id, client_secret)
 
