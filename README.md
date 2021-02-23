@@ -1,4 +1,5 @@
 
+
 # Spotify Stats
 
 A flask app to see your top Spotify artists of all time.
@@ -16,9 +17,10 @@ You will need to create a Spotify developer account at https://developer.spotify
 Clone the repository to your device.
 
 You will need to install the following packages with `pip`:
-`pip install flask`
-`pip install requests`
-
+```
+pip install flask
+pip install requests
+```
 Next, create a virtual environment and set required environment variables in your Python shell:
     ` venv/Scripts/activate`
     
