@@ -12,6 +12,7 @@ A flask app to see your top Spotify artists of all time.
 
 You will need to create a Spotify developer account at https://developer.spotify.com/ and create a new app to use their API
 - Then you will need to [register](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app) your application with ``http://localhost:8000/callback`` as the redirect URI.
+- (You can use whatever url you want for this, just make sure to update the variable `redirect_uri` in `flask.py`)
 
 ## Setup
 Clone the repository to your device.
