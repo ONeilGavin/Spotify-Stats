@@ -25,7 +25,7 @@ Next, create a virtual environment and set required environment variables in you
     ` venv/Scripts/activate`
     
    Then, if you are in Windows terminal:
-    `set FLASK_APP=hello.py`
+    `set FLASK_APP=flask_server.py`
     
    Or if you're using PowerShell:
     `$env:FLASK_APP = "flask_server.py"`
